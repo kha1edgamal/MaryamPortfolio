@@ -1,0 +1,314 @@
+/* ============================================================
+   case-study.css — Specific styles for AllEmployeesAreMarketers
+   ============================================================ */
+
+.case-study-root {
+  background-color: var(--cream);
+  padding-top: 80px;
+}
+
+.cs-section {
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Ambient Visual Effects for backgrounds */
+.cs-bg-graphic {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.cs-bg-1 {
+  width: 400px;
+  height: 400px;
+  background: var(--yellow);
+  opacity: 0.15;
+  top: -150px;
+  left: -150px;
+}
+
+.cs-bg-2 {
+  width: 500px;
+  height: 500px;
+  background: var(--purple);
+  opacity: 0.1;
+  bottom: -200px;
+  right: -200px;
+}
+
+.cs-bg-3 {
+  width: 350px;
+  height: 350px;
+  background: var(--purple);
+  opacity: 0.08;
+  top: 30%;
+  left: -100px;
+}
+
+/* Ensure container text stays above visuals */
+.cs-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  position: relative;
+  z-index: 2;
+}
+
+.cs-title {
+  font-size: clamp(36px, 5vw, 64px);
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--dark);
+  line-height: 1.2;
+}
+
+.cs-title span {
+  color: var(--purple);
+}
+
+.cs-subtitle {
+  font-size: clamp(24px, 3vw, 36px);
+  font-weight: 700;
+  color: var(--purple);
+  margin-bottom: 30px;
+  line-height: 1.4;
+}
+
+.cs-badge {
+  font-size: 14px;
+  color: var(--purple);
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  margin-bottom: 24px;
+  background: rgba(123, 47, 190, 0.1);
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 30px;
+}
+
+.cs-text {
+  font-size: 18px;
+  line-height: 1.9;
+  color: rgba(17, 17, 17, 0.8);
+  margin-bottom: 20px;
+}
+
+/* Big Idea Box */
+.cs-big-idea-box {
+  background: var(--white);
+  border: 1px solid rgba(123, 47, 190, 0.2);
+  border-right: 6px solid var(--purple);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+  margin-top: 40px;
+}
+
+.cs-quote {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--dark);
+  line-height: 1.5;
+  text-align: center;
+  padding: 40px;
+  background: rgba(249, 181, 48, 0.1);
+  border-radius: 20px;
+  margin: 60px 0;
+  border: 1px solid rgba(249, 181, 48, 0.3);
+}
+
+.cs-quote-purple {
+  background: rgba(123, 47, 190, 0.05);
+  border-color: rgba(123, 47, 190, 0.2);
+  color: var(--purple);
+}
+
+/* Timeline & Blocks */
+.cs-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 50px;
+}
+
+.cs-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.cs-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 50px;
+}
+
+.cs-grid-8 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 50px;
+}
+
+@media (max-width: 900px) {
+  .cs-grid-4, .cs-grid-8, .cs-grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cs-grid-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .cs-grid-4, .cs-grid-8, .cs-grid-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cs-card {
+  background: var(--white);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  transition: transform 0.3s;
+}
+
+.cs-card:hover {
+  transform: translateY(-5px);
+}
+
+.cs-card-num {
+  font-size: 40px;
+  font-weight: 900;
+  color: rgba(123, 47, 190, 0.2);
+  margin-bottom: 20px;
+  line-height: 1;
+}
+
+/* Huge Numbers */
+.cs-huge-number {
+  font-size: clamp(80px, 12vw, 150px);
+  font-weight: 900;
+  color: var(--purple);
+  line-height: 1;
+  text-align: center;
+  margin: 40px 0;
+  text-shadow: 0 10px 30px rgba(123, 47, 190, 0.2);
+}
+
+/* Circular Journey */
+.cs-circle-journey {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin: 60px auto;
+}
+
+.cs-circle-step {
+  background: var(--white);
+  padding: 20px 40px;
+  border-radius: 40px;
+  border: 2px solid var(--purple);
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  min-width: 250px;
+  color: var(--dark);
+}
+
+.cs-circle-arrow {
+  height: 40px;
+  width: 2px;
+  background: var(--yellow);
+  z-index: 1;
+}
+
+/* Highlight boxes */
+.cs-box-yellow {
+  background: rgba(249, 181, 48, 0.15);
+  border-left: 4px solid var(--yellow);
+  padding: 24px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+/* Funnel Representation */
+.cs-funnel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background: var(--cream);
+  padding: 40px;
+  border-radius: 20px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.cs-funnel-step {
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.cs-funnel-arrow {
+  color: var(--yellow);
+  font-size: 40px;
+}
+
+.cs-highlight-text {
+  color: var(--purple);
+  font-weight: 700;
+}
+
+/* ============================================================
+   Case Study Responsive Breakpoints
+   ============================================================ */
+@media (max-width: 768px) {
+  .cs-section {
+    padding: 60px 0;
+  }
+  
+  .cs-container {
+    padding: 0 20px;
+  }
+  
+  .cs-title {
+    font-size: clamp(28px, 6vw, 42px);
+  }
+  
+  .cs-subtitle {
+    font-size: clamp(20px, 4vw, 26px);
+    margin-bottom: 20px;
+  }
+  
+  .cs-big-idea-box {
+    padding: 24px;
+    margin-top: 20px;
+    border-right-width: 4px;
+  }
+  
+  .cs-quote {
+    font-size: 18px;
+    padding: 24px;
+    margin: 40px 0;
+  }
+  
+  .cs-card {
+    padding: 20px;
+  }
+
+  .cs-bg-graphic {
+    /* Scale down ambient graphics on mobile to avoid horizontal scrolling/overflow issues */
+    transform: scale(0.6);
+  }
+}
