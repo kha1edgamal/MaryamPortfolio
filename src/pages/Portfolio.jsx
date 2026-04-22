@@ -472,7 +472,7 @@ export default function Portfolio() {
       </section>
 
       {/* 5. PURPLE COW */}
-      <section id="purple-cow" className="purple-cow-section">
+      <section id="purple-cow" className="purple-cow-section ">
         <div className="section-container">
           <RevealText>
             <div className="section-badge" style={{ marginBottom: "30px" }}>٠٤ — البقرة البنفسجية</div>
