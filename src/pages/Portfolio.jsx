@@ -16,19 +16,12 @@ import testImg from "../assets/testpng.png";
 
 // New Content Assets
 import casestudy1Pic from "../assets/casestudy1-pic.png";
-import casestudy1Content from "../assets/casestudy1-content.png";
 import casestudy2Pic from "../assets/casestudy2-pic.png";
-import casestudy2Content from "../assets/casestudy2-content.png";
 import casestudy3Pic from "../assets/casestudy3-pic.png";
-import casestudy3Content from "../assets/casestudy3-content.png";
 import casestudy4Pic from "../assets/casestudy4-pic.png";
-import casestudy4Content from "../assets/casestudy4-content.png";
 import purplecowPic from "../assets/purplecow-pic.png";
-import purplecowContent from "../assets/purplecow-content.png";
 import marketingsongPic from "../assets/marketingsong-pic.png";
 import marketingsongPic2 from "../assets/marketingsong-pic2.png";
-import marketingsongContent1 from "../assets/marketingsong-content1.png";
-import marketingsongContent2 from "../assets/marketingsong-content2.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -153,7 +146,6 @@ export default function Portfolio() {
   const caseStudies = [
     {
       pic: casestudy1Pic,
-      contentImg: casestudy1Content,
       date: "٢٠٢٤ - جيني وليدر إكسبرس",
       title: "رفع الحافز لدى كباتن جيني",
       ocr: (
@@ -171,7 +163,6 @@ export default function Portfolio() {
     },
     {
       pic: casestudy2Pic,
-      contentImg: casestudy2Content,
       date: "بطاقة الراجحي x ليدر إكسبرس",
       title: "ظهور مجاني أمام 11 مليون عميل",
       ocr: (
@@ -188,7 +179,6 @@ export default function Portfolio() {
     },
     {
       pic: casestudy3Pic,
-      contentImg: casestudy3Content,
       date: "ولاء بلس للشركات",
       title: "الربط بين الاحتياج والتحفيز",
       ocr: (
@@ -204,7 +194,6 @@ export default function Portfolio() {
     },
     {
       pic: casestudy4Pic,
-      contentImg: casestudy4Content,
       date: "ذا فيس شوب",
       title: "بناء ارتباط شخصي بالمنتج",
       ocr: (
@@ -268,8 +257,7 @@ export default function Portfolio() {
             {/* Photo clipped to blob */}
             <image
               href={testImg}
-              x="-36" y="-34"
-              width="262" height="250"
+              x="-20" y="40" width="230" height="120"
               clipPath="url(#hero-blob-clip)"
               preserveAspectRatio="xMidYMid meet"
             />
@@ -480,7 +468,7 @@ export default function Portfolio() {
           <div className="pc-layout">
             <RevealText>
               <div className="pc-text-col glass-card">
-                <img src={purplecowContent} alt="Purple Cow Original Content" className="visually-hidden" />
+                {/* <img src={purplecowContent} alt="Purple Cow Original Content" className="visually-hidden" /> */}
                 <div className="pc-badge">(حين يتفوق الانتباه على الكمال)</div>
                 <div className="pc-en-title">When Attention Beats Perfection</div>
 
@@ -547,9 +535,9 @@ export default function Portfolio() {
               من لحن بسيط إلى <span>9 مليون مساهِم بنشر علامتك.</span>
             </div>
           </RevealText>
-
+          {/* 
           <img src={marketingsongContent1} alt="Marketing Song 1 Text" className="visually-hidden" />
-          <img src={marketingsongContent2} alt="Marketing Song 2 Text" className="visually-hidden" />
+          <img src={marketingsongContent2} alt="Marketing Song 2 Text" className="visually-hidden" /> */}
 
           <div className="ms-timeline mt-6">
             <div className="ms-timeline-item">

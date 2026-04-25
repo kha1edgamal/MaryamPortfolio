@@ -1796,7 +1796,7 @@
     grid-template-columns: 1fr;
     gap: 40px;
   }
-  
+
   .hero-container {
     padding: 0 40px 60px !important;
     text-align: center;
@@ -1806,8 +1806,9 @@
   .humanity-grid {
     padding: 120px 40px 60px;
   }
-  
-  .hero-text, .why-text-col {
+
+  .hero-text,
+  .why-text-col {
     order: 0;
   }
 
@@ -1829,16 +1830,30 @@
     height: 80vw;
   }
 
-  .cursor-dot, .cursor-follower {
+  .cursor-dot,
+  .cursor-follower {
     display: none !important;
+  }
+
+  .nav.nav--scrolled .mobile-menu-overlay {
+    height: 100vh
   }
 }
 
 @media (max-width: 768px) {
+  .popup-slider-nav {
+    top: 44px;
+  }
+
+  .popup-nav-btn {
+    width: 30px;
+    height: 30px;
+  }
+
   .nav {
     padding: 15px 20px;
   }
-  
+
   .nav__links {
     gap: 15px;
     font-size: 14px;
@@ -1855,10 +1870,12 @@
     padding: 0 20px 40px !important;
   }
 
-  .why-container, .humanity-grid, .footer-container {
+  .why-container,
+  .humanity-grid,
+  .footer-container {
     padding: 100px 20px 40px;
   }
-  
+
   .footer-container {
     flex-direction: column;
     gap: 15px;
@@ -1866,11 +1883,22 @@
     padding: 20px;
   }
 
-  .hero-title, .why-heading, .humanity-heading, .contact-heading, .philosophy-heading, .case-studies-heading, .marketing-heading {
+  .hero-title,
+  .why-heading,
+  .humanity-heading,
+  .contact-heading,
+  .philosophy-heading,
+  .case-studies-heading,
+  .marketing-heading {
     font-size: clamp(32px, 8vw, 42px);
   }
 
-  .case-studies-section, .purple-cow-section, .marketing-song-section, .philosophy-section, .why-section, .competitions-section {
+  .case-studies-section,
+  .purple-cow-section,
+  .marketing-song-section,
+  .philosophy-section,
+  .why-section,
+  .competitions-section {
     padding: 60px 0 !important;
   }
 
@@ -1881,7 +1909,7 @@
   .skills-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .skill-card--span-2 {
     grid-column: span 1;
   }
@@ -1894,12 +1922,13 @@
     justify-content: center;
     flex-wrap: wrap;
   }
-  
+
   .humanity-photo-wrap {
     min-height: 300px;
   }
-  
-  .btn-primary, .btn-outline {
+
+  .btn-primary,
+  .btn-outline {
     padding: 15px 30px;
     font-size: 16px;
     width: 100%;
@@ -1909,11 +1938,11 @@
   .hide-on-mobile {
     display: none !important;
   }
-  
+
   .show-on-mobile {
     display: block !important;
   }
-  
+
   .mobile-nav-toggle {
     display: flex !important;
   }
